@@ -70,7 +70,7 @@ function App() {
                 <th>Name</th>
                 <th>Description</th>
                 <th>Category</th>
-                <th>Amount</th>
+                <th>Amount (ksh)</th>
                 <th>Date</th>
               </tr>
             </thead>
@@ -81,14 +81,13 @@ function App() {
                     <td>{expense.name}</td>
                     <td>{expense.description}</td>
                     <td>{expense.category}</td>
-                    <td>{expense.amount}</td>
-                    <td>{expense.date}</td>
-                  </tr>
+n devv                  </tr>
                 ))
               ) : (
                 <tr>
                   
-                </tr>
+                  </tr>
+                  
               )}
             </tbody>
           </table>
