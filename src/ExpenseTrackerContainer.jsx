@@ -25,7 +25,7 @@ function ExpenseTrackerContainer({ children }) {
       !newExpense.description ||
       !newExpense.category ||
       !newExpense.amount ||
-      !newExpense.date
+      !newExpense.date 
     )
       return;
 

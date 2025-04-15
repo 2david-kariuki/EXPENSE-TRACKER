@@ -15,7 +15,6 @@ function App() {
         <div className="container">
           <h1>Expense Tracker</h1>
 
-          
           <form onSubmit={handleSubmit} className="expense-form">
             <input
               type="text"
@@ -54,7 +53,6 @@ function App() {
             <button type="submit">Add Expense</button>
           </form>
 
-          
           <input
             type="text"
             placeholder="Search by name or description..."
@@ -63,14 +61,13 @@ function App() {
             className="search-bar"
           />
 
-          
           <table className="expense-table">
             <thead>
               <tr>
                 <th>Name</th>
                 <th>Description</th>
                 <th>Category</th>
-                <th>Amount (ksh)</th>
+                <th>Amount </th>
                 <th>Date</th>
               </tr>
             </thead>
@@ -81,13 +78,12 @@ function App() {
                     <td>{expense.name}</td>
                     <td>{expense.description}</td>
                     <td>{expense.category}</td>
-n devv                  </tr>
+                    <td>{expense.amount}</td>
+                    <td>{new Date(expense.date).toLocaleDateString()}</td>
+                  </tr>
                 ))
               ) : (
-                <tr>
-                  
-                  </tr>
-                  
+                <tr></tr>
               )}
             </tbody>
           </table>
